@@ -152,7 +152,7 @@ book;
 //const author = book.author;
 //author;
 
-const {title, author, pages, publiationonDate, genres, hasMovieAdaptation} = book;
+const {title, author, pages, publicationDate, genres, hasMovieAdaptation} = book;
 console.log(title, author, genres);
 
 //const primaryGenre = [0];
@@ -170,4 +170,7 @@ const updatedBook = {...book,
                      // Overwriting an existing property
                      pages: 1210, 
                      title: 'One Piece'};
-updatedBook
+updatedBook;
+
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${publicationDate.split("-")[0]}`;
+summary;
